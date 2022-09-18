@@ -1,0 +1,59 @@
+.homeMainContent {
+  width: 100%;
+  position: relative;
+  top: 120px;
+  height: 120vh;
+}
+
+.sectionContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 85px;
+  margin-right: 85px;
+  width: 2500px;
+}
+
+.introduction {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.headline {
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 23px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  width: 400px;
+  line-height: 1.6;
+}
+.allCards {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+.cardBox {
+  width: fit-content;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.card {
+  border-radius: 50px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
