@@ -1,0 +1,46 @@
+.categoryAMainContent {
+  width: 100%;
+  position: relative;
+  top: 120px;
+  height: 120vh;
+}
+
+.movie-list {
+  display: block;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.movie-list li {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.movie-list li:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background: linear-gradient(135deg, blue 0%, green 100%);
+}
+.movie-list li::before,
+.movie-list li::after {
+  background: linear-gradient(135deg, blue 0%, green 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
